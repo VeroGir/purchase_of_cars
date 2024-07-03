@@ -1,0 +1,7 @@
+/.idea
+/gulpfile.js
+/package.json
+/docker-compose.yml
+/package-lock.json
+/node_modules
+/docker
