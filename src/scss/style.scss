@@ -1,0 +1,21 @@
+@import "base/font";
+@import "base/variables";
+@import "blocks/divider";
+
+* {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/application";
+@import "blocks/working";
