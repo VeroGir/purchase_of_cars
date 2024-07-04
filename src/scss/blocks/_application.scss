@@ -1,0 +1,90 @@
+.application {
+  min-height: 693px;
+  background-color: #000;
+  overflow: hidden;
+  &__form {
+    margin: 60px auto;
+    padding: 39px 73px 25px 73px;
+    width: 828px;
+    height: 590px;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: #1E1E1E;
+  }
+  &__title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__input {
+    padding-left: 35px;
+    color: #616161;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 25px;
+    width: 280px;
+    height: 40px;
+    border: 1px solid #6F6E6EFF;
+    border-radius: 10px;
+    background: #DBDBDBFF;
+    &-region {
+      width: 620px;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 35px auto;
+    width: 314px;
+    height: 63px;
+    color: #616161FF;
+    font-size: 27px;
+    font-weight: 700;
+    border: 1px solid #6F6E6EFF;
+    border-radius: 15px;
+    background: #DBDBDBFF;
+    cursor: pointer;
+    &:hover {
+      border: none;
+      background-color: $main-color;
+      color: #ffffff;
+      transition: all 0.5s;
+    }
+  }
+  &__policy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 10px;
+    }
+    a {
+      position: relative;
+      color: #FE2A2A;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 16px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        width: 0;
+        background-color: #FE2A2A;
+        transition: width 0.50s;
+      }
+      &:hover:after {
+        width: 195px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.divider {
+  margin-top: 70px;
+  display: block;
+  width: 139px;
+  height: 4px;
+  background-color: $main-color;
+  border-radius: 5px;
+  &-form {
+    width: 170px;
+    margin: 30px auto;
+  }
+  &-working {
+    width: 170px;
+    margin: 50px auto;
+  }
+}

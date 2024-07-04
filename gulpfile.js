@@ -69,7 +69,6 @@ function html() {
     return gulp.src(path.src.html)
         .pipe(fileinclude())
         .pipe(gulp.dest(path.build.html))
-        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest(path.build.html))
         .pipe(browserSync.stream());
 }
@@ -123,7 +122,7 @@ function fonts() {
 }
 
 function mailer() {
-    return gulp.src("src/mailer/**/*")
+    return gulp.src(path.src.mailer)
         .pipe(gulp.dest(path.build.mailer))
         .pipe(browserSync.stream());
 }
