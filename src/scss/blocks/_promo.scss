@@ -17,14 +17,12 @@
     color: #ffffff;
     font-size: 54px;
     font-weight: 700;
-    line-height: 65px;
   }
   &__subtitle {
     margin-top: 18px;
     color: #ffffff;
     font-size: 35px;
     font-weight: 700;
-    line-height: 42px;
   }
   &__work {
     margin-top: 100px;
@@ -40,6 +38,10 @@
     height: 56px;
   }
   &__icon {
+    width: 56px;
+    height: 56px;
+  }
+  &__item {
     display: flex;
     flex-direction: column;
     justify-content: center;

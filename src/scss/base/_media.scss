@@ -1,0 +1,240 @@
+@media (max-width: 991px) {
+  .application {
+    &__items {
+      justify-content: space-between;
+    }
+    &__form {
+      width: 70%;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__input {
+      width: calc(100% - 40px);
+      &-region {
+        width: calc(100% - 40px);
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    min-height: 120px;
+    &__logo {
+      width: 90px;
+      height: 90px;
+    }
+    &__contacts {
+      flex-direction: column-reverse;
+    }
+    &__wrapper {
+      margin-top: 15px;
+    }
+    &__telephone {
+      width: 20px;
+      height: 20px;
+    }
+    &__social {
+      margin-left: 10px;
+    }
+    &__icons {
+      width: 25px;
+      height: 25px;
+      &:hover {
+        transition: none;
+        fill: #ffffff;
+      }
+    }
+    &__link {
+      padding-right: 20px;
+    }
+  }
+  .promo {
+    min-height: 700px;
+    &__title {
+      font-size: 40px;
+      margin-top: 155px;
+    }
+    &__subtitle {
+      margin-top: 6px;
+      font-size: 30px;
+    }
+    &__work {
+      margin: 60px auto;
+    }
+    &__item {
+      width: 30%;
+    }
+    &__icon {
+      width: 50px;
+      height: 50px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+  }
+  .divider {
+    margin-top: 50px;
+    &-form {
+      margin-top: 35px;
+    }
+    &-working {
+      margin: 50px auto 0 auto;
+    }
+  }
+  .application {
+    &__title {
+      font-size: 28px;
+    }
+    &__form {
+      width: 80%;
+      margin: 30px auto;
+      padding: 39px 45px 25px 45px;
+    }
+    &__button {
+      margin: 35px auto 15px auto;
+      width: 250px;
+      height: 50px;
+      color: #616161;
+      font-size: 22px;
+      &:hover {
+        transition: all 0s;
+      }
+    }
+    &__policy {
+      span {
+        font-size: 10px;
+        margin-left: 7px;
+      }
+    }
+  }
+  .working {
+    min-height: 600px;
+    &__items {
+      margin: 20px auto;
+    }
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+    &__circle {
+      width: 80px;
+      height: 80px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .phone {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-color;
+    top: 85%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .header {
+    min-height: 90px;
+    &__logo {
+      width: 60px;
+      height: 60px;
+    }
+    &__social {
+      width: 150px;
+      margin: 0;
+    }
+    &__link {
+      padding-right: 17px;
+    }
+    &__icons {
+      width: 20px;
+      height: 20px;
+    }
+    &__telephone {
+      width: 17px;
+      height: 17px;
+    }
+    &__phone {
+      font-size: 14px;
+    }
+  }
+  .promo {
+    &:before {
+      right: -100%;
+    }
+    min-height: 600px;
+    &__title {
+      font-size: 30px;
+      margin-top: 115px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__work {
+      width: 100%;
+      margin: 45px auto;
+    }
+    &__item {
+      margin-top: 15px;
+      width: 50%;
+    }
+
+  }
+  .divider {
+    margin-top: 35px;
+    &-form {
+      width: 125px;
+    }
+    &-working {
+      margin-top: 25px;
+      width: 155px;
+    }
+  }
+  .application {
+    &__title {
+      font-size: 25px;
+    }
+    &__form {
+      width: 100%;
+      padding: 39px 15px 25px 15px;
+    }
+    &__input {
+      font-size: 15px;
+    }
+    &__button {
+      margin: 25px auto 15px auto;
+      width: 212px;
+      height: 47px;
+      font-size: 19px;
+    }
+    &__policy {
+      label {
+        width: 145px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      a {
+        &:hover:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .working {
+    &__title {
+      margin-top: 0;
+      font-size: 25px;
+    }
+  }
+}
