@@ -1,7 +1,6 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require '../mailer/PHPMailer/Exception.php';
@@ -13,6 +12,8 @@ require '../mailer/PHPMailer/PHPMailer.php';
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'PHPMailer/language/');
+
+
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -28,10 +29,10 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.yandex.ru';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'pachagrigorev@yandex.ru';                     //SMTP username
+    $mail->Username   = '********@yandex.ru';                     //SMTP username
     $mail->Password   = 'fsfqswbnijxnqtiz';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
-    $mail->Port       = 587;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;
 
     //Recipients
     $mail->setFrom('pachagrigorev@yandex.ru', 'Сайт АвтоВыкупа');
@@ -48,7 +49,10 @@ try {
                      'Регион:' . ' ' . $region . '<br>' .
                      'Город:' . ' ' . $city;
 
+
     $mail->send();
+
+
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

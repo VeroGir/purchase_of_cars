@@ -195,7 +195,7 @@
     <section class="application">
         <div class="container">
             <div class="application__form">
-                <form id="form" action="mailer/mail.php" method="POST">
+                <form  id="form" action="#">
                     <h2 class="application__title">Оставить заявку</h2>
                     <div class="divider divider-form"></div>
                     <div class="application__items">
@@ -231,8 +231,8 @@
                         </div>
                         <div class="application__item">
                             <label for="formRegion"></label>
-                            <input class="application__input application__input-region" type="text" id="formRegion"
-                                   name="region" required
+                            <input class="application__input application__input-region" type="text" id="formRegion" required
+                                   name="region"
                                    placeholder="Регион">
                         </div>
                     </div>
@@ -393,6 +393,9 @@
         </div>
     </section>
 </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script type="module" src="js/main.min.js"></script>
 </body>

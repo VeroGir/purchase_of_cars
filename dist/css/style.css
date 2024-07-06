@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/PTSans-Regular.eot");
+  src: url("../fonts/Inter-Medium.eot");
   src: local("Inter"), url("../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
   font-weight: 500;
 }
@@ -289,7 +289,7 @@
   color: #616161;
   font-size: 20px;
   font-weight: 400;
-  margin-top: 25px;
+  margin-top: 35px;
   width: 280px;
   height: 40px;
   border: 1px solid #6f6e6e;
@@ -324,6 +324,8 @@
 }
 
 .application__policy {
+  position: relative;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,6 +724,7 @@
 
   .application__form {
     width: 100%;
+    min-height: 745px;
     padding: 39px 15px 25px 15px;
   }
 
