@@ -5,8 +5,8 @@
   &__form {
     margin: 60px auto;
     padding: 39px 73px 25px 73px;
-    width: 828px;
-    height: 590px;
+    width: 815px;
+    min-height: 590px;
     box-sizing: border-box;
     border-radius: 24px;
     background: #1E1E1E;
@@ -28,14 +28,14 @@
     color: #616161;
     font-size: 20px;
     font-weight: 400;
-    margin-top: 25px;
+    margin-top: 35px;
     width: 280px;
     height: 40px;
     border: 1px solid #6F6E6EFF;
     border-radius: 10px;
     background: #DBDBDBFF;
     &-region {
-      width: 620px;
+      width: 610px;
     }
   }
   &__button {
@@ -58,6 +58,8 @@
     }
   }
   &__policy {
+    position: relative;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

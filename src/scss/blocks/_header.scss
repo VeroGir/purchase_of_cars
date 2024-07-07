@@ -22,10 +22,15 @@
   }
   &__social {
     width: 170px;
-    margin-left: 45px;
+    margin-left: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__contacts {
     display: flex;
@@ -34,6 +39,8 @@
   }
   &__telephone {
     fill: #ffffff;
+    width: 26px;
+    height: 26px;
   }
   &__phone {
     color: #ffffff;

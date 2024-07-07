@@ -1,6 +1,7 @@
 @import "base/font";
 @import "base/variables";
 @import "blocks/divider";
+@import "base/media";
 
 * {
   font-family: 'Inter', sans-serif;
@@ -10,9 +11,13 @@
   padding: 0;
 }
 
+.phone {
+  display: none;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 @import "blocks/header";
