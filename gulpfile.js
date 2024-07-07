@@ -10,6 +10,7 @@ const path = {
         icons: project_folder + "/icons/",
         fonts: project_folder + "/fonts/",
         mailer: project_folder + "/mailer/",
+        favicons: project_folder + "/favicons/",
     },
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -19,6 +20,7 @@ const path = {
         icons: source_folder + "/icons/**/*.+(png|jpg|gif|ico|svg|webp)",
         fonts: source_folder + "/fonts/**/*.{ttf,eot,woff,woff2}",
         mailer: source_folder + "/mailer/**/*.php",
+        favicons: source_folder + "/favicons/**/*",
     },
     watch: {
         html: source_folder + "/**/*.html",
@@ -27,6 +29,7 @@ const path = {
         img: source_folder + "/img/**/*.+(png|jpg|gif|ico|svg|webp)",
         icons: source_folder + "/icons/**/*.+(png|jpg|gif|ico|svg|webp)",
         mailer: source_folder + "/mailer/**/*.php",
+        favicons: source_folder + "/favicons/**/*",
     },
     clean: "./" + project_folder + "/"
 }
@@ -62,6 +65,7 @@ function watchFiles() {
     gulp.watch([path.watch.img], images);
     gulp.watch([path.watch.icons], icons);
     gulp.watch([path.watch.mailer], mailer);
+    gulp.watch([path.watch.favicons], favicons);
 }
 
 
@@ -127,11 +131,17 @@ function mailer() {
         .pipe(browserSync.stream());
 }
 
+function favicons() {
+    return gulp.src(path.src.favicons)
+        .pipe(gulp.dest(path.build.favicons))
+        .pipe(browserSync.stream());
+}
+
 function clean() {
     return del(path.clean);
 }
 
-const build = gulp.series(clean, gulp.parallel(fonts, icons, images, js, css, html, mailer));
+const build = gulp.series(clean, gulp.parallel(fonts, icons, images, js, css, html, mailer, favicons));
 const watch = gulp.parallel(build, watchFiles, server);
 
 
@@ -141,6 +151,7 @@ exports.images = images;
 exports.js = js;
 exports.css = css;
 exports.mailer = mailer;
+exports.favicons = favicons;
 exports.html = html;
 exports.build = build;
 exports.watch = watch;
