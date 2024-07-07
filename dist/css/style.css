@@ -489,6 +489,7 @@
   }
 
   .header__logo {
+    -webkit-tap-highlight-color: transparent;
     width: 90px;
     height: 90px;
   }
@@ -525,6 +526,7 @@
   }
 
   .header__link {
+    -webkit-tap-highlight-color: transparent;
     padding-right: 20px;
   }
 
@@ -582,6 +584,7 @@
   }
 
   .application__button {
+    -webkit-tap-highlight-color: transparent;
     margin: 35px auto 15px auto;
     width: 250px;
     height: 50px;
@@ -623,27 +626,23 @@
 }
 
 @media (max-width: 575px) {
-  .phone {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #ff0202;
-    top: 85%;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
+  .container {
+    position: relative;
   }
 
-  .phone__icon {
-    width: 20px;
-    height: 20px;
+  .phone {
+    display: inline;
+    -webkit-tap-highlight-color: transparent;
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+  }
+
+  .phone img {
+    width: 100%;
   }
 
   .header {
@@ -661,12 +660,13 @@
   }
 
   .header__link {
-    padding-right: 17px;
+    padding-right: 15px;
   }
 
   .header__icons {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    outline: none;
   }
 
   .header__telephone {
@@ -688,7 +688,7 @@
 
   .promo__title {
     font-size: 30px;
-    margin-top: 115px;
+    margin-top: 135px;
   }
 
   .promo__subtitle {
@@ -705,12 +705,26 @@
     width: 50%;
   }
 
+  .promo__wrapper {
+    height: 40px;
+  }
+
+  .promo__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .promo__descr {
+    font-size: 15px;
+  }
+
   .divider {
     margin-top: 35px;
   }
 
   .divider-form {
     width: 125px;
+    margin: 23px auto 0 auto;
   }
 
   .divider-working {
@@ -724,12 +738,13 @@
 
   .application__form {
     width: 100%;
-    min-height: 745px;
-    padding: 39px 15px 25px 15px;
+    min-height: 678px;
+    padding: 26px 15px 23px 15px;
   }
 
   .application__input {
     font-size: 15px;
+    margin-top: 23px;
   }
 
   .application__button {
@@ -740,6 +755,7 @@
   }
 
   .application__policy label {
+    margin-left: 10px;
     width: 145px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -756,6 +772,10 @@
 
   .application__policy a:hover:after {
     display: none;
+  }
+
+  .working {
+    padding-bottom: 35px;
   }
 
   .working__title {

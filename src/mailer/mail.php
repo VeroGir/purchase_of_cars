@@ -29,7 +29,7 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.yandex.ru';
     $mail->SMTPAuth   = true;
-    $mail->Username   = '********@yandex.ru';                     //SMTP username
+    $mail->Username   = 'pachagrigorev@yandex.ru';                     //SMTP username
     $mail->Password   = 'fsfqswbnijxnqtiz';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;

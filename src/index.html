@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Выкупим ваш автомобиль в любом состоянии, по вашей цене!"/>
     <title>Выкуп Автомобилей Кемеровская, Томская, Новосибирская область</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -55,12 +56,6 @@
 <main>
     <section class="promo">
         <div class="container">
-            <a class="phone" href="tel:89000550165">
-                <svg class="phone__icon" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25.9976 20.5338C25.9976 21.1981 25.7022 22.491 25.4257 23.1009C25.038 24.0062 24.004 24.5971 23.1732 25.058C22.0836 25.649 20.9763 26 19.739 26C18.0219 26 16.4702 25.298 14.9009 24.7259C13.7746 24.3194 12.6851 23.8206 11.6699 23.1931C8.53116 21.2536 4.74597 17.4681 2.80669 14.329C2.17917 13.3138 1.68047 12.2241 1.27394 11.0978C0.701968 9.52825 0 7.97645 0 6.25919C0 5.02177 0.350984 3.91436 0.941866 2.82467C1.40394 1.99382 1.99482 0.95968 2.89887 0.572026C3.50866 0.295468 4.80033 0 5.46566 0C5.59447 0 5.72447 2.01166e-07 5.85328 0.0555482C6.2409 0.184372 6.64742 1.08969 6.83178 1.45961C7.42266 2.51266 7.99464 3.58344 8.60443 4.61757C8.89987 5.09741 9.45411 5.68835 9.45411 6.26156C9.45411 7.38788 6.11209 9.03187 6.11209 10.0282C6.11209 10.5269 6.57416 11.1734 6.83178 11.6166C8.6966 14.9779 11.0235 17.305 14.3844 19.17C14.8276 19.4288 15.474 19.8897 15.9727 19.8897C16.9701 19.8897 18.6128 16.5474 19.739 16.5474C20.311 16.5474 20.9019 17.1017 21.3828 17.3972C22.4169 18.007 23.4876 18.579 24.5405 19.17C24.9104 19.3543 25.8145 19.7609 25.9445 20.1486C26 20.2774 26 20.4074 26 20.5362L25.9976 20.5338Z"
-                          fill="white"/>
-                </svg>
-            </a>
             <h1 class="promo__title">Выкуп Авто с пробегом</h1>
             <h2 class="promo__subtitle">По вашей цене</h2>
             <div class="divider"></div>
@@ -200,9 +195,9 @@
                     <div class="divider divider-form"></div>
                     <div class="application__items">
                         <div class="application__item">
-                            <label for="formStamp"></label>
-                            <input class="application__input" type="text" id="formStamp" name="stamp" required
-                                   placeholder="Марка">
+                            <label for="formName"></label>
+                            <input class="application__input" type="text" id="formName" name="name" required
+                                   placeholder="Имя">
                         </div>
                         <div class="application__item">
                             <label for="formPhone"></label>
@@ -210,14 +205,14 @@
                                    placeholder="Номер телефона">
                         </div>
                         <div class="application__item">
+                            <label for="formStamp"></label>
+                            <input class="application__input" type="text" id="formStamp" name="stamp" required
+                                   placeholder="Марка">
+                        </div>
+                        <div class="application__item">
                             <label for="formModel"></label>
                             <input class="application__input" type="text" id="formModel" name="model" required
                                    placeholder="Модель">
-                        </div>
-                        <div class="application__item">
-                            <label for="formName"></label>
-                            <input class="application__input" type="text" id="formName" name="name" required
-                                   placeholder="Имя">
                         </div>
                         <div class="application__item">
                             <label for="formRelease"></label>
@@ -392,10 +387,11 @@
             </div>
         </div>
     </section>
+    <a class="phone" href="tel:89000550165">
+        <img src="icons/phone.svg" alt="phone">
+    </a>
 </main>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/just-validate.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script type="module" src="js/main.min.js"></script>
 </body>
