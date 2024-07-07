@@ -29,14 +29,14 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.yandex.ru';
     $mail->SMTPAuth   = true;
-    $mail->Username   = '*************@yandex.ru';                     //SMTP username
-    $mail->Password   = '*************';                               //SMTP password
+    $mail->Username   = '****************@yandex.ru';                     //SMTP username
+    $mail->Password   = '****************';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;
 
     //Recipients
-    $mail->setFrom('***************@yandex.ru', 'Сайт АвтоВыкупа');
-    $mail->addAddress('**************@mail.ru');
+    $mail->setFrom('****************@yandex.ru', 'Сайт АвтоВыкупа');
+    $mail->addAddress('****************@mail.ru');
 
     //Content
     $mail->isHTML(true);
