@@ -36,7 +36,7 @@ try {
 
     //Recipients
     $mail->setFrom('***************@yandex.ru', 'Сайт АвтоВыкупа');
-    $mail->addAddress('*************@mail.ru');
+    $mail->addAddress('**************@mail.ru');
 
     //Content
     $mail->isHTML(true);
