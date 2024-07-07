@@ -2,8 +2,6 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // const validation = new JustValidate('#form');
-
    try {
        let phone = document.querySelector("#formPhone");
        let im = new Inputmask("+7(999)999-99-99");
